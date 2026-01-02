@@ -93,4 +93,4 @@ jobs:
             sed -i "s|\${GITHUB_SHA}|${GITHUB_SHA}|g" docker-compose.yml
             sed -i "s|\${DOCKER_USERNAME}|${{ secrets.DOCKER_USERNAME }}|g" docker-compose.yml
             docker pull ${{ secrets.DOCKER_USERNAME }}/${{ env.SERVICE_NAME }}:${GITHUB_SHA}
-            docker-compose up -d
+            docker compose up -d
