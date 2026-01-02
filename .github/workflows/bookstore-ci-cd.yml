@@ -54,7 +54,7 @@ jobs:
           docker push $IMAGE_NAME
 
   deploy:
-    needs: package  
+    needs: build
     runs-on: self-hosted
     steps:
       - name: Checkout repository
