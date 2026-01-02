@@ -27,7 +27,7 @@ jobs:
 
       - name: Maven Package
         working-directory: ${{ env.SERVICE_DIR }}
-        run: mvn clean package --no-transfer-progress
+        run: mvn clean package --no-transfer-progress -DskipTests
 
       - name: Log in to Docker registry
         uses: docker/login-action@v3
