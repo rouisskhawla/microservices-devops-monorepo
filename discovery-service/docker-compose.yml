@@ -1,0 +1,12 @@
+services:
+    discovery: 
+        image: "${DOCKER_USERNAME}/discovery:${GITHUB_SHA}"
+        container_name: discovery
+        ports:
+            - "8761:8761"
+        restart: always
+
+networks: 
+  default: 
+    external: 
+      name: docker-ms

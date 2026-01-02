@@ -1,0 +1,12 @@
+services:
+    api-gateway: 
+        image: "${DOCKER_USERNAME}/api-gateway:${GITHUB_SHA}"
+        container_name: api-gateway
+        ports:
+            - "8090:8090"
+        restart: always
+
+networks: 
+  default: 
+    external: 
+      name: docker-ms

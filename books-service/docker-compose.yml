@@ -1,0 +1,12 @@
+services:
+    books: 
+        image: "${DOCKER_USERNAME}/books:${GITHUB_SHA}"
+        container_name: books
+        ports:
+            - "8081:8081"
+        restart: always
+
+networks: 
+  default: 
+    external: 
+      name: docker-ms

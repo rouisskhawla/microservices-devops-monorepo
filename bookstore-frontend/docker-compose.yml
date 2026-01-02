@@ -1,0 +1,15 @@
+services:
+    bookstore-frontend: 
+        image: "${DOCKER_USERNAME}/bookstore-frontend:${GITHUB_SHA}"
+        container_name: bookstore-frontend
+        ports:
+          - "80:80"
+          - "443:443"
+        volumes:
+          - /etc/nginx/ssl:/etc/nginx/ssl:ro
+        restart: always
+
+networks: 
+  default: 
+    external: 
+      name: docker-ms

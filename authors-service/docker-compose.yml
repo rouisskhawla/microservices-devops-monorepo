@@ -1,0 +1,12 @@
+services:
+    authors: 
+        image: "${DOCKER_USERNAME}/authors:${GITHUB_SHA}"
+        container_name: authors
+        ports:
+            - "8082:8082"
+        restart: always
+
+networks: 
+  default: 
+    external: 
+      name: docker-ms
