@@ -17,7 +17,7 @@ public class CorsConfig {
 		config.setAllowedOrigins(Arrays.asList(
 				"http://local.bookstore",
 				"https://local.bookstore",
-                "http://192.168.1.9",   // prod front url
+                "http://192.168.1.11",   // prod front url
                 "http://localhost:4200" // dev front url
         ));
 		config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
