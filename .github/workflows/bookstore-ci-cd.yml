@@ -49,7 +49,7 @@ jobs:
       - name: Build & Push Docker image
         working-directory: ${{ env.SERVICE_DIR }}
         run: |
-          IMAGE_NAME=${{ secrets.DOCKER_USERNAME }}/bookstore-frontend:${GITHUB_SHA}
+          IMAGE_NAME=${{ secrets.DOCKER_USERNAME }}/${{ env.SERVICE_NAME }}:${GITHUB_SHA}
           docker build -t $IMAGE_NAME .
           docker push $IMAGE_NAME
 
