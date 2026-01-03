@@ -1,6 +1,6 @@
 services:
     bookstore-frontend: 
-        image: "${DOCKER_USERNAME}/bookstore-frontend:${GITHUB_SHA}"
+        image: "${DOCKER_USERNAME}/bookstore:${GITHUB_SHA}"
         container_name: bookstore-frontend
         ports:
           - "80:80"
