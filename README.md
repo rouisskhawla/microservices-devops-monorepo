@@ -56,6 +56,8 @@ This setup demonstrates how the same architecture and DevOps practices can be ma
 * `PROD_SSH_KEY`
 * `PROD_PORT`
 
+* Screenshot for Secrets here [Repo Secrets](docs/ci-cd/repository-secrets.png)
+
 ---
 
 ### Service Pipelines and Triggering
@@ -179,6 +181,8 @@ Add certificates in `bookstore-frontend/nginx.conf` file
 ssl_certificate     /etc/nginx/ssl/local.bookstore.crt;
 ssl_certificate_key /etc/nginx/ssl/local.bookstore.key;
 ```
+
+* Screenshots for Frontend here [Frontend Pages](docs/frontend)
 
 ---
 
