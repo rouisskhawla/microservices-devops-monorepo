@@ -1,3 +1,9 @@
+![API Gateway](https://github.com/rouisskhawla/microservices-devops-monorepo/actions/workflows/api-gateway-ci-cd.yml/badge.svg)
+![Authors Service](https://github.com/rouisskhawla/microservices-devops-monorepo/actions/workflows/authors-ci-cd.yml/badge.svg)
+![Books Service](https://github.com/rouisskhawla/microservices-devops-monorepo/actions/workflows/books-ci-cd.yml/badge.svg)
+![Bookstore Frontend](https://github.com/rouisskhawla/microservices-devops-monorepo/actions/workflows/bookstore-ci-cd.yml/badge.svg)
+![Discovery Server](https://github.com/rouisskhawla/microservices-devops-monorepo/actions/workflows/discovery-ci-cd.yml/badge.svg)
+
 # DevOps Microservices – Monorepo
 
 This repository contains a **monorepo implementation** of a microservices system.
